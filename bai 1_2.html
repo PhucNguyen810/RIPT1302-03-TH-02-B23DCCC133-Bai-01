@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Quản Lý</title>
+  <link rel="stylesheet" type="text/css" href="bai 1_2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">Trang chủ</a></li>
+                <li><a href="#">Quản lý khoa</a></li>
+                <li><a href="#">Quản lý chuyên ngành</a></li>
+                <li><a href="#">Quản lý hệ đào tạo</a></li>
+                <li><a href="#">Quản lý niên khóa</a></li>
+                <li><a href="#">Quản lý lớp</a></li>
+                <li><a href="#" class="active">Quản lý giáo viên</a></li>
+                <li><a href="#">Quản lý hội đồng</a></li>
+                <li><a href="#">Quản lý sinh viên</a></li>
+                <li><a href="#">Danh sách đồ án</a></li>
+            </ul>
+        </div>
+    <div id="right-panel">
+      <div id="top-right">
+        <div><input type="text" placeholder="Chọn Khoa"></div>
+        <div><input type="text" placeholder="Chọn Chuyên Ngành"></div>
+        <div><button onclick="refresh()">Tìm Kiếm</button></div>
+        <div><button onclick="refresh()">Làm Mới</button></div>
+      </div>
+      <div id="bottom-right">
+        <!-- Các thẻ giáo viên sẽ được thêm vào đây bằng JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="bai 1 gd.js"></script>
+</body>
+</html>

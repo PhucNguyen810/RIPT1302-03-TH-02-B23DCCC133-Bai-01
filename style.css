@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    background-color: #353030;
+    width: 250px;
+    padding: 20px;
+    height: 100%; /* Đảm bảo khung màu xám bên trái kéo dài xuống dưới */
+}
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a.active {
+    background-color: #00bcd4;
+}
+.sidebar-menu li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.stat p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
